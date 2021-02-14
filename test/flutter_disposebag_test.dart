@@ -48,6 +48,18 @@ class _MyWidgetState extends State<MyWidget> with DisposeBagMixin {
       ),
     );
   }
+
+  @override
+  void dispose() {
+    Timer(
+      Duration(seconds: 1),
+      expectAsync0(() {
+        expect(() => bag, throwsStateError);
+        print('Done');
+      }),
+    );
+    super.dispose();
+  }
 }
 
 void main() {
@@ -76,6 +88,8 @@ void main() {
         await disposed;
 
         expect(disposeBag.isDisposed, isTrue);
+
+        await Future<void>.delayed(const Duration(seconds: 2));
       });
     });
   });
