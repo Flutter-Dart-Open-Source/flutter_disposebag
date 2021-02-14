@@ -1,3 +1,8 @@
+## 1.1.0-nullsafety.1 - Feb 14, 2021
+
+*   Update dependencies.
+*   Moved to: https://github.com/Flutter-Dart-Open-Source/flutter_disposebag
+
 ## 1.1.0-nullsafety.0 - Dec 11, 2020
 
 *   Migrate this package to null safety.
