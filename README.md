@@ -3,6 +3,9 @@
 ## Author: [Petrus Nguyễn Thái Học](https://github.com/hoc081098)
 
 [![Pub](https://img.shields.io/pub/v/flutter_disposebag)](https://pub.dev/packages/flutter_disposebag)
+[![Pub Version](https://img.shields.io/pub/v/flutter_disposebag?include_prereleases)](https://pub.dev/packages/flutter_disposebag)
+[![codecov](https://codecov.io/gh/Flutter-Dart-Open-Source/flutter_disposebag/branch/master/graph/badge.svg?token=g0vMFL9L2Q)](https://codecov.io/gh/Flutter-Dart-Open-Source/flutter_disposebag)
+[![Flutter Tests](https://github.com/Flutter-Dart-Open-Source/flutter_disposebag/workflows/Flutter%20Tests/badge.svg)](https://github.com/Flutter-Dart-Open-Source/flutter_disposebag.git)
 
 *   A package to help disposing Streams and closing Sinks easily for Flutter.
 *   Automatically disposes `StreamSubscription` and closes `Sink` when disposing `State<T>`.
