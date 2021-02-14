@@ -7,14 +7,14 @@ import 'package:meta/meta.dart';
 /// A mixin that provides the [DisposeBag] that helps disposing Streams and closing Sinks.
 @optionalTypeArgs
 mixin DisposeBagMixin<T extends StatefulWidget> on State<T> {
-  Completer<bool>? _mockBagDisposed;
+  Completer<void>? _mockBagDisposed;
 
   /// Set mock [DisposeBag] for testing purpose.
   /// Returns a [Future] that completes when [DisposeBag.dispose] completes.
   @visibleForTesting
-  Future<bool> setMockBag(DisposeBag bag) {
+  Future<void> setMockBag(DisposeBag bag) {
     _bag = bag;
-    return (_mockBagDisposed = Completer<bool>()).future;
+    return (_mockBagDisposed = Completer<void>()).future;
   }
 
   //
@@ -29,7 +29,7 @@ mixin DisposeBagMixin<T extends StatefulWidget> on State<T> {
     if (!mounted) {
       throw StateError('Invalid when getting bag after disposed.');
     }
-    return _bag ??= DisposeBag();
+    return _bag ??= DisposeBag(const <Object>[], toStringShort());
   }
 
   @override

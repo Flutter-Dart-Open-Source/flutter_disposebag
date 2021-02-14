@@ -17,7 +17,7 @@ class MyWidget extends StatefulWidget {
 }
 
 class _MyWidgetState extends State<MyWidget> with DisposeBagMixin {
-  late Future<bool> disposed;
+  late Future<void> disposed;
 
   @override
   void initState() {
