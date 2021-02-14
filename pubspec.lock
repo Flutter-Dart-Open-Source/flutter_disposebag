@@ -46,11 +46,9 @@ packages:
   disposebag:
     dependency: "direct main"
     description:
-      path: "."
-      ref: nnbd
-      resolved-ref: be76d01278c0c5e3eff417b92925c208b50e7450
-      url: "https://github.com/hoc081098/disposebag.git"
-    source: git
+      name: disposebag
+      url: "https://pub.dartlang.org"
+    source: hosted
     version: "1.5.0-nullsafety.0"
   fake_async:
     dependency: transitive
