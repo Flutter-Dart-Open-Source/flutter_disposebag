@@ -10,6 +10,10 @@
 *   A package to help disposing Streams and closing Sinks easily for Flutter.
 *   Automatically disposes `StreamSubscription` and closes `Sink` when disposing `State<T>`.
 
+## Medium article
+
+[How to easily cancel streams in Flutter](https://hoc081098.medium.com/how-to-easily-cancel-streams-in-dart-flutter-69cad1980267)
+
 ## Usage
 
 A simple usage example:
