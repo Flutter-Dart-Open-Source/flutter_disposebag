@@ -33,9 +33,11 @@ jobs:
         run: flutter packages get
 
       - name: Format
+        if: ${{ matrix.channel == 'stable' }}
         run: flutter format lib test --set-exit-if-changed
 
       - name: Analyze
+        if: ${{ matrix.channel == 'stable' }}
         run: flutter analyze lib test
 
       - name: Run tests
