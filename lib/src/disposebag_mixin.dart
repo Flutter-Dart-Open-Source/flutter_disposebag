@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:disposebag/disposebag.dart';
 import 'package:flutter/widgets.dart';
-import 'package:meta/meta.dart';
 
 /// A mixin that provides the [DisposeBag] that helps disposing Streams and closing Sinks.
 @optionalTypeArgs
